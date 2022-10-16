@@ -1,0 +1,353 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  box-shadow: 0 2px 2px -2px gray;
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 100px;
+  background-color: #FFFFFF;
+}
+
+.head-logo-link {
+  background-image: url(/images/header-logo.png);
+  display: inline-block;
+  height: 60px;
+  width: 120px;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  width: 610px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgba(31, 46, 53, 0.8);
+}
+
+.nav-link.special::after {
+  content: "";
+  width: 15px;
+  height: 10px;
+  display: inline-block;
+  background-image: url(/images/arrow/chevron_down.svg);
+  background-repeat: no-repeat;
+  margin-left: 8px;
+}
+
+.header-log-panel {
+  width: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.log-panel-link {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.log-panel-link.house {
+  background-image: url(/images/Union.svg);
+  padding-bottom: 23px;
+}
+
+.log-panel-link.mail {
+  background-image: url(/images/basic/mail.png);
+}
+
+.log-panel-link.signs {
+  background-image: url(/images/media/shuffle.svg);
+}
+
+.info-card {
+  margin-bottom: 125px;
+}
+
+.info-card-wrapper {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 75px;
+}
+
+.info-card-text {
+  padding-top: 10px;
+}
+.info-card-text h1 {
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 133.69%;
+  letter-spacing: 0em;
+  color: #1F2E35;
+  max-width: 545px;
+}
+.info-card-text p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #30444E;
+  margin-bottom: 25px;
+}
+
+.itechnology {
+  color: #EE4248;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.button {
+  display: grid;
+  width: 161px;
+  height: 53px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+  background-color: #EE4248;
+  text-decoration: none;
+  border-radius: 5px;
+  place-items: center;
+}
+
+.info-card-img {
+  min-height: 380px;
+  min-width: 562px;
+  padding-left: 20px;
+}
+
+.card-text {
+  background-color: #F6F6F6;
+  margin-bottom: 115px;
+}
+
+.card-text-wrapper {
+  padding-top: 57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.card-text-img {
+  min-height: 470px;
+  min-width: 450px;
+  padding: 25px 100px 130px 0;
+}
+
+.card-text-data {
+  max-width: 520px;
+}
+.card-text-data h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 43px;
+  margin-bottom: 24px;
+  color: #1F2E35;
+}
+.card-text-data h2 span {
+  color: #EE4248;
+}
+.card-text-data p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 30px;
+  color: #30444E;
+}
+.card-text-data p:last-child {
+  margin-bottom: 0;
+}
+.card-text-data .dsi {
+  color: #EE4248;
+}
+
+/*Product and Services*/
+.product {
+  margin-bottom: 150px;
+}
+
+.product-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-heading {
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 43px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #1F2E35;
+}
+
+.product__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column {
+  box-sizing: border-box;
+  margin-right: 70px;
+}
+
+.column.last {
+  margin: 0;
+}
+
+.column__img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 15px;
+}
+
+.column__name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  color: #EE4248;
+  margin-bottom: 15px;
+}
+
+.column__paragraph {
+  max-width: 319px;
+  min-height: 110px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #30444E;
+  margin-bottom: 15px;
+}
+
+.column__btn {
+  display: grid;
+  width: 120px;
+  height: 42px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #EE4248;
+  text-decoration: none;
+  border-radius: 5px;
+  place-items: center;
+}
+
+/*pre-footer*/
+.pre-footer {
+  margin-bottom: 25px;
+}
+
+.pre-footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pre-footer__column1 {
+  max-width: 320px;
+  box-sizing: border-box;
+  margin-right: 50px;
+}
+
+.pre-footer-heading1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 8px;
+  color: #263238;
+}
+
+.pre-footer-paragraph {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  max-width: 320px;
+  color: #263238;
+}
+
+.pre-footer__column2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.pre-footer__column2 .pre-footer-heading2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  color: #263238;
+}
+
+/* footer */
+.footer {
+  background-color: #EE4248;
+}
+
+.footer__wrapper {
+  height: 65px;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: grid;
+  place-items: center;
+  color: #FFFFFF;
+}
+
+.footer-copyright-span {
+  font-weight: 300;
+}/*# sourceMappingURL=main.css.map */
